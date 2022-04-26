@@ -1,0 +1,10 @@
+/**********
+For index/'home' page
+**********/
+body {
+    font-family: 'Times New Roman', Times, serif
+}
+
+body.nav-brand{
+    size: 12px;
+}
