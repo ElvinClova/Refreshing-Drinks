@@ -5,6 +5,24 @@ body {
     font-family: 'Times New Roman', Times, serif
 }
 
-body.nav-brand{
-    size: 12px;
+img, logo {
+    height: 69px;
 }
+container-fluid, i.fa.search {
+    position: absolute;
+    right: 109px;
+    bottom: 33px;
+
+}
+
+container-fluid, i.fa.fa-shopping-cart {
+    position: absolute;
+    right: 79px;
+}
+
+container-fluid, i.fa.user {
+    position: absolute;
+    right: 49px;
+    bottom: 33px;
+}
+
