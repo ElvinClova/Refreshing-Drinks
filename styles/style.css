@@ -64,7 +64,7 @@ header .right-nav{
     top: 33px;
 }
 
-.col-1 p{
+p{
     position: relative;
     font-size: medium;
     font-family: sans-serif;
@@ -73,7 +73,7 @@ header .right-nav{
     bottom: 0px;
     padding: 5px;
 }
-.col-1 h4{
+h4{
     position: absolute;
     color: white;
     font-family: sans-serif;
@@ -81,7 +81,7 @@ header .right-nav{
     bottom: 4px;
 }    
 
-.col-1 h6{
+h6{
     position: absolute;
     left: 5px;
     bottom: -6px;
@@ -100,6 +100,28 @@ header .right-nav{
     width: 25%;
     padding: 2%;
 }
+
+/* .col-2 p{
+    position: relative;
+    font-size: medium;
+    font-family: sans-serif;
+    font-weight: 500;
+    left: 0;
+    bottom: 0px;
+    padding: 5px;
+} */
+
+.col-2 h6{
+    color: red;
+}
+
+/* .col-2 h4{
+    position: absolute;
+    color: white;
+    font-family: sans-serif;
+    right: 20px;
+    bottom: 4px;
+}  */
 
 .col-3{
     position: absolute;
