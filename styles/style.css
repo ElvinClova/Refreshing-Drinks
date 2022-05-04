@@ -32,7 +32,21 @@ header .right-nav{
 
 h2{
     position: relative;
-    left: 18px;
+    left: 69px;
+    bottom: -16px;
+}
+
+.left-row-1{
+    position: relative;
+    left: 1%;
+    top: 233px;
+}
+
+.right-row-1{
+    position: absolute;
+    right: 1%;
+    top: 345px;
+
 }
 
 .drinks{
@@ -59,13 +73,13 @@ h2{
 
 .col-1{
     position: absolute;
-    left: 0;
-    width: 25%;
+    left: 4%;
+    width: 20%;
     padding: 2%;
 }
 .heart{
     position: absolute;
-    right: 47px;
+    right: -20px;
     top: 33px;
 }
 
@@ -82,7 +96,7 @@ h4{
     position: absolute;
     color: white;
     font-family: sans-serif;
-    right: 20px;
+    right: -44px;
     bottom: 4px;
 }    
 
@@ -96,13 +110,13 @@ h6{
 
 .add-to-cart{
     position: absolute;
-    right: 10px;
+    left: 127px;
 }
 
 .col-2{
     position: absolute;
-    left: 25%;
-    width: 25%;
+    left: 27%;
+    width: 20%;
     padding: 2%;
 }
 
@@ -130,15 +144,15 @@ h6{
 
 .col-3{
     position: absolute;
-    right: 25%;
-    width: 25%;
+    right: 30%;
+    width: 20%;
     padding: 2%;
 
 }
 
 .col-4 {
     position: absolute;
-    right: 0%;
-    width: 25%;
+    right: 7%;
+    width: 20%;
     padding: 2%;
 }
