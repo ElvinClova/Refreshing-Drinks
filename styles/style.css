@@ -93,12 +93,13 @@ p{
     bottom: 0px;
     padding: 5px;
 }
-h4{
+h5{
     position: absolute;
     color: white;
     font-family: sans-serif;
-    right: -44px;
-    bottom: 4px;
+    right: -45px;
+    font-size: large;
+    bottom: 6px;
 }    
 
 h6{
@@ -266,4 +267,80 @@ h6{
     position: absolute;
     right: -30%;
     top: 208px;
+}
+
+.row-4{
+    position: absolute;
+    width: 100%;
+    height: 33%;
+    bottom: -139pc;
+    padding: 10px;
+}
+
+.contact-info{
+    position: absolute;
+    width: 50%;
+    right: 6.5%;
+    padding: 2%;
+}
+.slogan{
+    position: relative;
+    font-size: 9pt;
+    color: rgb(108, 108, 108);
+    font-family: unset;
+    font-weight: 550;
+    left: -35%;
+    bottom: 0px;
+    padding: 5px;
+}    
+
+.slogan-2{
+    position: relative;
+    font-size: 9pt;
+    color: rgb(108, 108, 108);
+    font-family: unset;
+    font-weight: 550;
+    left: -9%;
+    bottom: 15px;
+    padding: 5px;
+}    
+
+.contact{
+    position: relative;
+    font-size: 9pt;
+    font-family: unset;
+    font-weight: 800;
+    left: 8%;
+    bottom: 14px;
+    padding: 5px;
+}
+
+.contact-2{
+    position: relative;
+    font-size: 9pt;
+    font-family: unset;
+    font-weight: 700;
+    left: -11%;
+    bottom: 35px;
+    padding: 5px;
+}
+
+.rights{
+    position: relative;
+    font-size: 9pt;
+    color: lightgray;
+    font-family: unset;
+    font-weight: 550;
+    left: 39%;
+    bottom: -24px;
+    padding: 5px;
+}
+
+footer{
+    position: absolute;
+    width: 100%;
+    height: 15%;
+    bottom: -154pc;
+    padding: 10px;
+    border: 0.5px solid lightgray;
 }
