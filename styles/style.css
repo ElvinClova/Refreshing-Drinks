@@ -184,7 +184,6 @@ h6{
     right: 30%;
     width: 20%;
     padding: 2%;
-
 }
 
 .heart-2{
@@ -204,5 +203,67 @@ h6{
     position: absolute;
     right: 1%;
     top: 299px;
+}
 
+.row-3{
+    position: absolute;
+    width: 100%;
+    height: 33%;
+    bottom: -89pc;
+    padding: 10px;
+}
+
+.title-row-3{
+    position: absolute;
+    left: 43%;
+}
+
+.left-row-3{
+    position: relative;
+    left: 1%;
+    top: 233px;
+}
+
+.col-3-1{
+    position: absolute;
+    left: 4%;
+    width: 20%;
+    padding: 2%;
+}
+
+.col-3-2{
+    position: absolute;
+    left: 27%;
+    width: 20%;
+    padding: 2%;
+}
+
+.col-3-2 h6{
+    color: red;
+}
+
+.heart-3{
+    position: absolute;
+    right: -8%;
+    top: 34px;
+}
+
+.col-3-3{
+    position: absolute;
+    right: 30%;
+    width: 20%;
+    padding: 2%;
+}
+
+.col-3-4{
+    position: absolute;
+    right: 7%;
+    width: 20%;
+    padding: 2%;
+}
+
+.right-row-3{
+    position: absolute;
+    right: -30%;
+    top: 208px;
 }
