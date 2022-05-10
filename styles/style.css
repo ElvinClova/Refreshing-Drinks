@@ -8,339 +8,270 @@ body {
     overflow-y: scroll;
 }
 
-.main-image img{
+/**********************************************
+************************Header
+****************************************************************/
+header .main-image img{
     width: 100%;
 }
 
-header{
+header nav {
     position: absolute;
     top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
-    padding: 20px 0px;
+}
+
+header nav .logo img{
+    width: 150px;
+    padding: 20px 30px;
+}
+
+header nav .icons {
+    display: flex;
+    gap: 20px;
+    padding: 20px 30px;
+}
+header nav .mb-menu {
+    display: none;
+}
+/*****************************************
+******Media Screen
+****************************************************************/
+@media only screen and (max-width:600px) {
+    header nav .icons {
+        display: none;
+    }
+    header nav .mb-menu {
+        display: block;
+    }
+}
+
+/****************************************
+*************Main
+*****************************************/
+
+main .heading{
+    padding: 2rem 3rem;
+}
+
+main .item-container {
     display: flex;
     align-items: center;
+    gap: 1rem;
+    margin: 2rem 4rem;
 }
 
-header .logo{
-    width: 80%;
-    padding: 0px 100px;
-}
-
-header .right-nav{
-    width: 20%;
-}
-
-h2{
-    position: relative;
-    left: 69px;
-    bottom: -16px;
-}
-
-.left-row-1{
-    position: relative;
-    left: 1%;
-    top: 233px;
-}
-
-.right-row-1{
-    position: absolute;
-    right: 1%;
-    top: 345px;
-
-}
-
-.drinks{
-    position: relative;
-}
-
-
-.info {
-    position: relative;
+main .item-container .items{
     display: flex;
     align-items: center;
-    padding: 1px;
-    bottom: -31px;
-} 
-
-.row-1{
-    position: absolute;
-    width: 100%;
-    height: 33%;
-    top: 55px;
-    padding: 10px;
-    
+    gap: 1rem;
+    overflow: scroll;
 }
 
-.col-1{
-    position: absolute;
-    left: 4%;
-    width: 20%;
-    padding: 2%;
-}
-
-.heart{
-    position: absolute;
-    right: -20px;
-    top: 33px;
-}
-
-p{
+main .item-container .items .item{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
     position: relative;
-    font-size: medium;
-    font-family: sans-serif;
-    font-weight: 500;
+}
+
+main .item-container .items .item .like {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+main .item-container .items .item .like img{
+    padding: 1rem;
+}
+
+main .item-container .items .item .price{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    font-weight: 600;
+}
+
+main .item-container .items .item .price .sale{
+    color: red;
+}
+
+
+main .item-container .items .item .price button{
+    padding: 0.5rem 1rem;
+    border: 0;
+    background-color: green;
+    color: #FFF;
+}
+::-webkit-scrollbar {
+    display: none; 
+}
+/**********************************
+********Media Screen
+****************************************/
+@media only screen and (max-width:600px) {
+    main .item-container {
+        margin: 2rem 1rem;
+    }
+    main .item-container .items .item img {
+        width: 10rem;
+    }
+    main .item-container .items .item .like img {
+        width: 4rem;
+    }
+    main .item-container .items .item .price button {
+        font-size: 0.5rem;
+    }
+}
+/**********************************
+***********Footer
+*******************************************/
+footer .about-us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+:where(.slogan,.contact) {
+    text-align:center;
+}
+footer .about-us .contact span {
+    font-weight: bolder;
+}
+footer .about-us .contact p {
+    font-weight: 600;
+}
+footer .copyright {
+    text-align: center;
+    border-top: 0.1rem solid #EBEBEB;
+    color: #aeaeae;
+    padding: 1rem 0rem;
+}
+
+/***********************************
+********Sign In
+*********************************************/
+.sign-in {
+    position: absolute;
+    top: 0;
+    right: 0;
     left: 0;
-    bottom: 0px;
-    padding: 5px;
-}
-h5{
-    position: absolute;
-    color: white;
-    font-family: sans-serif;
-    right: -45px;
-    font-size: large;
-    bottom: 6px;
-}    
-
-h6{
-    position: absolute;
-    left: 5px;
-    bottom: -6px;
-    font-weight: 700;
-    font-size: large;
-}
-
-.add-to-cart{
-    position: absolute;
-    left: 127px;
-}
-
-.col-2{
-    position: absolute;
-    left: 27%;
-    width: 20%;
-    padding: 2%;
-}
-
-.col-2 h6{
-    color: red;
-}
-
-.col-3{
-    position: absolute;
-    right: 30%;
-    width: 20%;
-    padding: 2%;
-
-}
-
-.col-4 {
-    position: absolute;
-    right: 7%;
-    width: 20%;
-    padding: 2%;
-}
-
-.row-2{
-    position: absolute;
+    bottom: 0;
+    background-color: rgba(220,220,220,0.4);
     width: 100%;
-    height: 33%;
-    bottom: -46pc;
-    padding: 10px;
-    
+    height: 43rem;
 }
-
-.title-row-2{
-    position: relative;
-    left: 69px;
-    bottom: 0px;
-}
-
-.left-row-2{
-    position: relative;
-    left: 1%;
-    top: 233px;
-}
-
-.col-2-1{
-    position: absolute;
-    left: 4%;
-    width: 20%;
-    padding: 2%;
-}
-
-.col-2-2{
-    position: absolute;
-    left: 27%;
-    width: 20%;
-    padding: 2%;
-}
-
-.col-2-2{
-    color: red;
-}
-
-.col-2-3{
-    position: absolute;
-    right: 30%;
-    width: 20%;
-    padding: 2%;
-}
-
-.heart-2{
-    position: absolute;
-    right: -8%;
-    top: 34px;
-}
-
-.col-2-4{
-    position: absolute;
-    right: 7%;
-    width: 20%;
-    padding: 2%;
-}
-
-.right-row-2{
-    position: absolute;
-    right: 1%;
-    top: 299px;
-}
-
-.row-3{
-    position: absolute;
+.sign-in .form-container {
     width: 100%;
-    height: 33%;
-    bottom: -89pc;
-    padding: 10px;
+    display: flex;
+    justify-content: center;
+    margin: 3rem 0rem;
 }
-
-.title-row-3{
-    position: absolute;
-    left: 43%;
-}
-
-.left-row-3{
+.sign-in .form-container .form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: #FFF;
+    padding: 2rem 3rem;
     position: relative;
-    left: 1%;
-    top: 233px;
+    width: 25%;
 }
-
-.col-3-1{
+.sign-in .form-container .form .close {
     position: absolute;
-    left: 4%;
-    width: 20%;
-    padding: 2%;
+    top: 0;
+    right: 0;
 }
-
-.col-3-2{
-    position: absolute;
-    left: 27%;
-    width: 20%;
-    padding: 2%;
+.sign-in .form-container .form .close img {
+    padding: 0.5rem;
 }
-
-.col-3-2 h6{
-    color: red;
-}
-
-.heart-3{
-    position: absolute;
-    right: -8%;
-    top: 34px;
-}
-
-.col-3-3{
-    position: absolute;
-    right: 30%;
-    width: 20%;
-    padding: 2%;
-}
-
-.col-3-4{
-    position: absolute;
-    right: 7%;
-    width: 20%;
-    padding: 2%;
-}
-
-.right-row-3{
-    position: absolute;
-    right: -30%;
-    top: 208px;
-}
-
-.row-4{
-    position: absolute;
+.sign-in .form-container .form .inputs {
     width: 100%;
-    height: 33%;
-    bottom: -139pc;
-    padding: 10px;
 }
-
-.contact-info{
+.sign-in .form-container .form .inputs input {
+ padding: 1rem 1rem;
+ width: 90%;
+ border-radius: 1.5rem;
+ margin-bottom: 1rem;
+ border: 1px solid #aeaeae;
+}
+.sign-in .form-container .form .inputs .password {
+    position: relative;
+}
+.sign-in .form-container .form .inputs .password img {
     position: absolute;
-    width: 50%;
-    right: 6.5%;
-    padding: 2%;
+    right: 0.5rem;
+    top: 1.1rem;
 }
-.slogan{
-    position: relative;
-    font-size: 9pt;
-    color: rgb(108, 108, 108);
-    font-family: unset;
-    font-weight: 550;
-    left: -35%;
-    bottom: 0px;
-    padding: 5px;
-}    
-
-.slogan-2{
-    position: relative;
-    font-size: 9pt;
-    color: rgb(108, 108, 108);
-    font-family: unset;
-    font-weight: 550;
-    left: -9%;
-    bottom: 15px;
-    padding: 5px;
-}    
-
-.contact{
-    position: relative;
-    font-size: 9pt;
-    font-family: unset;
-    font-weight: 800;
-    left: 8%;
-    bottom: 14px;
-    padding: 5px;
-}
-
-.contact-2{
-    position: relative;
-    font-size: 9pt;
-    font-family: unset;
-    font-weight: 700;
-    left: -11%;
-    bottom: 35px;
-    padding: 5px;
-}
-
-.rights{
-    position: relative;
-    font-size: 9pt;
-    color: lightgray;
-    font-family: unset;
-    font-weight: 550;
-    left: 39%;
-    bottom: -24px;
-    padding: 5px;
-}
-
-footer{
-    position: absolute;
+.sign-in .form-container .form .forgot-password {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
-    height: 15%;
-    bottom: -154pc;
-    padding: 10px;
-    border: 0.5px solid lightgray;
+}
+.sign-in .form-container .form .forgot-password .checkbox {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+.sign-in .form-container .form .btn {
+    width: 100%;
+}
+.sign-in .form-container .form .btn button {
+    background-color: #FF6C00;
+    border: 0;
+    padding: 1rem 2rem;
+    width: 100%;
+    border: 0;
+    color: #fff;
+    border-radius: 2rem;
+    font-weight: bolder;
+}
+.sign-in .form-container .form .sign-up-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.sign-in .form-container .form .forgot-password a{
+    color: #808080;
+    text-decoration: none;
+}
+
+.sign-in .form-container .form .sign-up-link{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.sign-in .form-container .sign-up-link a{
+    text-decoration: none;
+    font-weight: 400;
+    color: black;
+}
+
+.sign-in .form-container .sign-up-link a.sign-up{
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/**************************
+*********media screen
+**********************************************/
+
+@media only screen and (max-width: 600px){
+    .sign-in .form-container .form{
+        width: 80%;
+        padding: 1rem;
+    }
 }
