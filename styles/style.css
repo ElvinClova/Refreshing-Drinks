@@ -155,7 +155,7 @@ footer .copyright {
 }
 
 /***********************************
-********Sign In
+********Sign In/Sign Up
 *********************************************/
 .sign-in {
     position: absolute;
@@ -274,4 +274,90 @@ footer .copyright {
         width: 80%;
         padding: 1rem;
     }
+}
+/***************************************
+***********Cart
+*****************************************/
+.cart-nav {
+    border-bottom: 1px solid #808080;
+}
+.cart-nav .logo img {
+    width: 100px;
+    padding: 0;
+}
+.cart{
+    margin: 4rem 2rem;
+}
+.cart table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 1rem 0rem;
+}
+.cart table th {
+    color: #c1c1c1;
+    font-size: 0.7rem;
+    font-weight: bolder;
+    text-align: start;
+    padding-bottom: 1rem;
+}
+.cart table tr {
+    text-align: start;
+    padding-bottom: 2rem;
+}
+.cart table tr td {
+    font-weight: bolder;
+    padding-bottom: 2rem;
+}
+.cart table  tr td .product {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+.cart table  tr td .product img {
+    width: 5rem;
+    border: 1px solid #000;
+    border-radius: 50%;
+}
+.cart table tr td button {
+    background-color: #fff;
+    padding: 0.5rem 1rem;
+    border: 1px solid #808080;
+    border-radius: 1rem;
+}
+.cart table tr td button span {
+    padding: 0rem 0.3rem;
+}
+
+.cart .table-footer{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15rem;
+}
+.cart .table-footer .sub-total {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+.cart .table-footer .sub-total span {
+    font-weight: bolder;
+}
+.cart .table-footer .btns {
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+}
+.cart .table-footer .btns button.shopping  {
+    background-color: #fff;
+    border: 1px solid #808080;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+}
+
+.cart .table-footer .btns button.next-step{
+    background-color: #FF6C00;
+    color: #FFF;
+    border: 0;
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
 }
