@@ -6,6 +6,8 @@ body {
     font-family: sans-serif;
     overflow: hidden;
     overflow-y: scroll;
+    padding: 0;
+    margin: 0;
 }
 
 /**********************************************
@@ -15,7 +17,7 @@ header .main-image img{
     width: 100%;
 }
 
-header nav {
+#nav {
     position: absolute;
     top: 0;
     display: flex;
@@ -24,27 +26,27 @@ header nav {
     width: 100%;
 }
 
-header nav .logo img{
-    width: 150px;
-    padding: 20px 30px;
+#nav .logo img{
+    width: 100px;
+    
 }
 
-header nav .icons {
+#nav .icons {
     display: flex;
     gap: 20px;
     padding: 20px 30px;
 }
-header nav .mb-menu {
+#nav .mb-menu {
     display: none;
 }
 /*****************************************
 ******Media Screen
 ****************************************************************/
 @media only screen and (max-width:600px) {
-    header nav .icons {
+     #nav .icons {
         display: none;
     }
-    header nav .mb-menu {
+     #nav .mb-menu {
         display: block;
     }
 }
@@ -360,4 +362,116 @@ footer .copyright {
     border: 0;
     border-radius: 1rem;
     padding: 0.5rem 1rem;
+}
+
+/*******************************************
+***************Shipment
+********************************************/
+.shipment{
+    margin: 6rem 0rem;
+}
+.shipment .message {
+    text-align: center;
+    background-color: #FF8F00;
+    color: #fff;
+}
+.shipment .message p {
+    padding: 3rem 0rem;
+    font-weight: 900;
+    font-size: 3rem;
+}
+.shipment .shipment-details .shipment-table  {
+    width: 90%;
+    margin: 0 auto;
+}
+.shipment .shipment-details .shipment-table table {
+    width: 45%;
+    border-collapse: collapse;
+}
+.shipment .shipment-details .shipment-table table tr td.name {
+    text-align: start;
+}
+.shipment .shipment-details .shipment-table table tr td {
+    padding: 1rem 0rem;
+    text-align: end;
+    width: 13%;
+}
+.shipment .shipment-details .shipment-table table tr.border {
+    border-top: 2px solid #000;
+}
+.shipment .shipment-details .shipment-table table tr td button {
+    border: 1px solid #c1c1c1;
+    background-color: #fff;
+    padding: 0.3rem 1rem;
+    border-radius: 1rem;
+}
+.shipment .shipment-details .shipment-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 2rem;
+    width: 50%;
+    margin: 2rem 3rem;
+}
+.shipment .shipment-details .shipment-form label {
+    font-weight: bolder;
+}
+:where(.shipment .shipment-details .shipment-form .name,.phone,.street,.pin,.building,.city,.state,.submit-btn) {
+    width: 100%;
+}
+.shipment .shipment-details .shipment-form input {
+    width: 90%;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    border: 1px solid #EBEBEB;
+}
+.shipment .shipment-details .shipment-form .submit-btn button {
+    padding: 1rem 2rem;
+    background-color: #FF6C00;
+    color: #fff;
+    border: 0;
+    width: 40%;
+    border-radius: 2rem;
+}
+/************************************
+**********Media Screen
+**********************************************/
+@media only screen and (max-width: 600px){
+    .shipment .shipment-details .shipment-table table{
+        width: 100%;
+    }
+    .shipment .shipment-details .shipment-form{
+        width: 80%;
+        margin: 2rem 1rem;
+    }
+    .shipment .shipment-details .shipment-form .submit-btn button{
+        width: 100%;
+    }
+}
+/************************************
+**********Order-Complete
+**********************************************/
+.message-container {
+    margin: 6rem 0rem;
+}
+.message-container .message {
+    background-color: #FF8F00;
+    text-align: center;
+    color: #fff;
+}
+.message-container .message h1 {
+    padding: 3rem 0rem;
+}
+.thank-you  {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.thank-you button {
+    padding: 0.5rem 2rem;
+    background-color: #FF6C00;
+    color: #fff;
+    border: 0;
+    border-radius: 1.5rem;
+    margin-top: 1rem;
 }
